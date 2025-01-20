@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Update Item</h1>
+<h1>ATUALIZAR PRODUTO</h1>
 <form method="POST">
     <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" value="{{ item.name }}" required>
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" value="{{ item.nome }}" required>
     </div>
     <div class="form-group">
-        <label for="description">Description</label>
-        <input type="text" class="form-control" id="description" name="description" value="{{ item.description }}">
+        <label for="quantidade">Quantidade</label>
+        <input type="text" class="form-control" id="quantidade" name="quantidade" value="{{ item.quantidade }}">
     </div>
-    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="submit" class="btn btn-primary">ATUALIZAR</button>
 </form>
 {% endblock %}

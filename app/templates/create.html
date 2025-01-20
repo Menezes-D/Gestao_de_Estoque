@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Create Item</h1>
+<h1>INSERIR PRODUTO</h1>
 <form method="POST">
     <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" required>
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
     </div>
     <div class="form-group">
-        <label for="description">Description</label>
-        <input type="text" class="form-control" id="description" name="description">
+        <label for="quantidade">Quantidade</label>
+        <input type="number" class="form-control" id="quantidade" name="quantidade">
     </div>
-    <button type="submit" class="btn btn-primary">Create</button>
+    <button type="submit" class="btn btn-primary">CRIAR</button>
 </form>
 {% endblock %}
