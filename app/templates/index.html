@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Produtos</h1>
+<a href="{{ url_for('create')}}" class="btn btn-primary">Inserir um Novo Produto</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome do Produto</th>
+            <th>Quantidade</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{item.nome}}</td>
+            <td>{{item.quantidade}}</td>
+            <td>
+                <a href="{{ url_for('update', id=item.id) }}" class="btn btn-warning">EDITAR</a>
+                <a href="{{ url_for('delete', id=item.id) }}" class="btn btn-danger">DELETAR</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+{% endblock %}
