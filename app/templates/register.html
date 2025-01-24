@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Cadastrar Novo Usuário</h1>
+
+{% if error %}
+    <div class="alert alert-danger">{{ error }}</div>
+{% endif %}
+
+<form method="POST">
+    <div class="form-group">
+        <label for="username">Usuário</label>
+        <input type="text" name="username" class="form-control" id="username" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" name="password" class="form-control" id="password" required>
+    </div>
+    <div class="form-group">
+        <label for="role">Tipo de Conta</label>
+        <select name="role" class="form-control" id="role" required>
+            <option value="user">Usuário</option>
+            <option value="admin">Administrador</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>
+
+{% endblock %}
