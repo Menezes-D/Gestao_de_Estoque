@@ -15,9 +15,9 @@ body {
     font-size: 50px !important;
     font-weight: bold;
     font-style: oblique;
-    text-transform: uppercase; /* Deixa o texto em maiúsculas */
-    color: white; /* Cor do texto */
-    text-align: center; /* Garante centralização do texto */
+    text-transform: uppercase; 
+    color: white; 
+    text-align: center; 
 }
 
 .navbar a {
@@ -41,6 +41,12 @@ h1 {
     color: #ffffff !important;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
 
 /* Estilo para a página de login */
 .login-form {
@@ -79,6 +85,12 @@ h1 {
     background-color: #0056b3;
 }
 
+
+
+
+
+
+
 /* Estilo para mensagens de flash */
 .flash-messages {
     margin-bottom: 10px;
@@ -87,30 +99,36 @@ h1 {
 .flash-messages .alert {
     font-size: 1.1rem;
     font-style: italic;
-    color: #ffffff; /* Cor do texto */
-    border-radius: 5px; /* Borda arredondada */
+    color: #ffffff; 
+    border-radius: 5px; 
 }
 
-/* Estilos específicos para categorias */
+
 .alert-success {
-    background-color: #28a745 !important; /* Fundo verde claro */
-    border: 1px solid #218838 !important; /* Borda verde */
+    background-color: #28a745 !important; 
+    border: 1px solid #218838 !important; 
 }
 
 .alert-error {
-    background-color: #dc3545 !important; /* Fundo vermelho claro */
-    border: 0.2px solid #bd2130 !important; /* Borda vermelha */
+    background-color: #dc3545 !important; 
+    border: 1px solid #bd2130 !important; 
 }
 
 .alert-warning {
-    background-color: #ffc107 !important; /* Fundo amarelo claro */
-    border: 1px solid #e0a800 !important; /* Borda amarela */
+    background-color: #ffc107 !important; 
+    border: 1px solid #e0a800 !important; 
 }
 
 .alert-info {
-    background-color: #17a2b8 !important; /* Fundo azul claro */
-    border: 0.5px solid #117a8b !important; /* Borda azul */
+    background-color: #17a2b8 !important; 
+    border: 1px solid #073a42 !important; 
 }
+
+
+
+
+
+
 
 /* Estilo para tabelas de produtos */
 table {
@@ -137,6 +155,12 @@ table td {
 table tr:hover {
     background-color: #f1f1f1;
 }
+
+
+
+
+
+
 
 /* Botões */
 .btn {
