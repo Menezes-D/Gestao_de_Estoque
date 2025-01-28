@@ -90,7 +90,6 @@ h1 {
 
 
 
-
 /* Estilo para mensagens de flash */
 .flash-messages {
     margin-bottom: 10px;
@@ -129,7 +128,6 @@ h1 {
 
 
 
-
 /* Estilo para tabelas de produtos */
 table {
     width: 100%;
@@ -155,8 +153,6 @@ table td {
 table tr:hover {
     background-color: #f1f1f1;
 }
-
-
 
 
 

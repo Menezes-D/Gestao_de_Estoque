@@ -18,7 +18,7 @@
     </nav>
 
     <div class="container mt-5">
-        <!-- Exibe mensagens flash -->
+       
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 <div class="flash-messages">
@@ -40,7 +40,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 
-    <!-- Script para fazer a mensagem desaparecer automaticamente após 3 segundos -->
+ 
     <script>
         setTimeout(function() {
             const flashMessages = document.querySelectorAll(".alert");
@@ -48,7 +48,7 @@
                 flashMessage.classList.remove("show");
                 flashMessage.classList.add("fade");
             });
-        }, 3000);  // 3000 milissegundos (3 segundos)
+        }, 3000);  
     </script>
 </body>
 </html>
